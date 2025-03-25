@@ -1,7 +1,6 @@
 export class getPokemon {
-	constructor(id, name) {
+	constructor(id) {
 		this.id = id;
-		this.name = name;
 	}
 
 	async getData(id = this.id) {
@@ -25,6 +24,7 @@ export class getPokemon {
 				name: pokeInfo.name,
 				primaryType: pokeInfo.types[0].type.name,
 				secondaryType: pokeInfo.types[1]?.type.name || "N/A",
+				sprite: pokeInfo.sprites.other.home.front_default,
 				stats: {
 					hp: pokeInfo.stats[0].base_stat,
 					atk: pokeInfo.stats[1].base_stat,

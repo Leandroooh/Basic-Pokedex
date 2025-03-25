@@ -8,8 +8,10 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script type="module" src="./index.js" defer></script>
-    <script type="module" src="./src/classes/GetPokemon-Data.js" defer></script>
+    <script type="module" src="./app.js" defer></script>
+
+    <script type="module" src="./src/classes/CreateElement.js" defer></script>
+    <script type="module" src="./src/classes/GetPokeData.js" defer></script>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
@@ -17,74 +19,61 @@
 
 <body>
 
-    <main class="container">
+    <main class="container" id="container">
 
-        <section class="poke-container">
-            <div class="poke-image">
-                <h1 class="poke-id">#150</h1>
-                <img class="poke-art" src="./public/images/pokemon/mewtwo.svg" alt="mewtwo">
+        <div class="divisionContainer">
+            <section class="poke-container">
+                <div class="poke-image">
+                    <h1 class="poke-id">#150</h1>
+                    <img class="poke-art" src="./public/images/pokemon/mewtwo.svg" alt="mewtwo">
 
-                <h2 class="poke-name">Mewtwo</h2>
-                <h3 class="poke-type">Psychic</h3>
-            </div>
-        </section>
-
-        <aside class="poke-info">
-            <header class="poke-search">
-                <input type="search" name="search-pokemon" id="search" placeholder="Pikachu | 25">
-                <button><img src="./public/images/icons/search.svg" alt="search-icon"></button>
-            </header>
-
-            <section class="stats-container">
-
-                <div class="stats">
-                    <h3>Hp</h3>
-                    <p>130</p>
-                    <div class="stats-bar"></div>
+                    <h2 class="poke-name">Mewtwo</h2>
+                    <h3 class="poke-type">Psychic</h3>
                 </div>
-
-                <div class="stats">
-                    <h3>Ataque</h3>
-                    <p>130</p>
-                    <div class="stats-bar"></div>
-                </div>
-
-                <div class="stats">
-                    <h3>Defesa</h3>
-                    <p>130</p>
-                    <div class="stats-bar"></div>
-                </div>
-
-                <div class="stats">
-                    <h3>Def. Especial</h3>
-                    <p>30</p>
-                    <div class="stats-bar"></div>
-                </div>
-
-                <div class="stats">
-                    <h3>Velocidade</h3>
-                    <p>130</p>
-                    <div class="stats-bar"></div>
-                </div>
-
             </section>
 
-            <!-- <section class="types-container">
+            <aside class="poke-info">
+                <!-- <header class="poke-search">
+                    <input type="search" name="search-pokemon" id="search" placeholder="Pikachu | 25">
+                    <button><img src="./public/images/icons/search.svg" alt="search-icon"></button>
+                </header> -->
 
-                <div class="primary-type-container">
-                    <div class="type-card">
-                        <h3>Psychic</h3>
+                <section class="stats-container">
+
+                    <div class="stats">
+                        <h3>Hp</h3>
+                        <p>130</p>
+                        <div class="stats-bar"></div>
                     </div>
-                </div>
 
-                <div class="secondary-type-container">
-                    <h3>N/A</h3>
-                </div>
+                    <div class="stats">
+                        <h3>Ataque</h3>
+                        <p>130</p>
+                        <div class="stats-bar"></div>
+                    </div>
 
-            </section> -->
+                    <div class="stats">
+                        <h3>Defesa</h3>
+                        <p>130</p>
+                        <div class="stats-bar"></div>
+                    </div>
 
-        </aside>
+                    <div class="stats">
+                        <h3>Def. Especial</h3>
+                        <p>30</p>
+                        <div class="stats-bar"></div>
+                    </div>
 
+                    <div class="stats">
+                        <h3>Velocidade</h3>
+                        <p>130</p>
+                        <div class="stats-bar"></div>
+                    </div>
+
+                </section>
+
+            </aside>
+        </div>
     </main>
 
 </body>
