@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeInfos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="./index.js" defer></script>
+    <script type="module" src="./src/classes/GetPokemon-Data.js" defer></script>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="poke-container">
+            <div class="poke-image">
+                <h1 class="poke-id">#150</h1>
+                <img class="poke-art" src="./public/images/pokemon/mewtwo.svg" alt="mewtwo">
+
+                <h2 class="poke-name">Mewtwo</h2>
+                <h3 class="poke-type">Psychic</h3>
+            </div>
+        </section>
+
+        <aside class="poke-info">
+            <header class="poke-search">
+                <input type="search" name="search-pokemon" id="search" placeholder="Pikachu | 25">
+                <button><img src="./public/images/icons/search.svg" alt="search-icon"></button>
+            </header>
+
+            <section class="stats-container">
+
+                <div class="stats">
+                    <h3>Hp</h3>
+                    <p>130</p>
+                    <div class="stats-bar"></div>
+                </div>
+
+                <div class="stats">
+                    <h3>Ataque</h3>
+                    <p>130</p>
+                    <div class="stats-bar"></div>
+                </div>
+
+                <div class="stats">
+                    <h3>Defesa</h3>
+                    <p>130</p>
+                    <div class="stats-bar"></div>
+                </div>
+
+                <div class="stats">
+                    <h3>Def. Especial</h3>
+                    <p>30</p>
+                    <div class="stats-bar"></div>
+                </div>
+
+                <div class="stats">
+                    <h3>Velocidade</h3>
+                    <p>130</p>
+                    <div class="stats-bar"></div>
+                </div>
+
+            </section>
+
+            <!-- <section class="types-container">
+
+                <div class="primary-type-container">
+                    <div class="type-card">
+                        <h3>Psychic</h3>
+                    </div>
+                </div>
+
+                <div class="secondary-type-container">
+                    <h3>N/A</h3>
+                </div>
+
+            </section> -->
+
+        </aside>
+
+    </main>
+
+</body>
+
+</html>
