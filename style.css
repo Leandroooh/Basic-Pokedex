@@ -73,7 +73,7 @@ body {
 
 .poke-container {
 	width: 860px;
-	height: 750px;
+	height: 850px;
 
 	display: flex;
 	flex-direction: column;
@@ -100,7 +100,7 @@ body {
 .poke-id {
 	position: absolute;
 
-	bottom: 310px;
+	bottom: 290px;
 
 	letter-spacing: 4rem;
 	color: var(--secondary-gray);
@@ -109,7 +109,7 @@ body {
 }
 
 .poke-art {
-	width: 430px;
+	width: 400px;
 	position: relative;
 	z-index: 1;
 }
@@ -118,13 +118,27 @@ body {
 	position: absolute;
 	top: 390px;
 	color: #8a8a8a;
-	letter-spacing: .5rem;
+	letter-spacing: .9rem;
+	text-transform: uppercase;
 	font: 600 6rem / 1.5 Montserrat, sans-serif;
 }
 
+.types {
+	display: flex;
+	position: relative;
+
+	top: 60px;
+	gap: 32px;
+}
+
 .poke-type {
-	color: var(--type-psychic);
+	/* color: var(--type-psychic); */
+	margin-top: 20px;
+
 	letter-spacing: 1rem;
+	text-transform: uppercase;
+
+	border-radius: 12px;
 	font: 700 3rem / 1.5 Montserrat, sans-serif;
 }
 

@@ -22,7 +22,7 @@ export class createPokeContainer {
 		this.atk = atk;
 		this.def = def;
 		this.spAtk = spatk;
-		this.spdef = spdef;
+		this.spDef = spdef;
 		this.speed = speed;
 	}
 
@@ -51,13 +51,56 @@ export class createPokeContainer {
 		pokeName.classList.add("poke-name");
 		pokeName.textContent = this.name;
 
+		const typeColors = {
+			grass: "#36AC3D",
+			fire: "#D38851",
+			fairy: "#EF52BB",
+			dragon: "#286196",
+			ground: "#BDAB4F",
+			psychic: "#BA4777",
+			steel: "#6E8D95",
+			flying: "#A0C3D2", // Cor suave azulada para Flying
+			water: "#4A90E2", // Azul para Water
+			ice: "#A9D9F5", // Azul claro para Ice
+			rock: "#B4A400", // Amarelo escuro para Rock
+			fighting: "#E63946", // Vermelho intenso para Fighting
+			normal: "#F1F1F1", // Cor neutra para Normal
+			poison: "#8E44AD", // Roxo para Poison
+			bug: "#B4C36F", // Cor de verde para Bug
+			ghost: "#71618A", // Cor roxa para Ghost
+			dark: "#0A0528", // Cor escura para Dark
+			electric: "#F2A62A", // Amarelo brilhante para Electric
+		};
+
+		const types = document.createElement("div");
+		types.classList.add("types");
+
 		const primaryType = document.createElement("h3");
 		primaryType.classList.add("poke-type");
+
+		if (this.primaryType in typeColors) {
+			primaryType.style.color = typeColors[this.primaryType];
+		}
+
 		primaryType.textContent = this.primaryType;
 
-		const secondaryType = document.createElement("h3");
-		secondaryType.classList.add("poke-type");
-		secondaryType.textContent = this.secondaryType;
+		types.append(primaryType);
+
+		if (this.secondaryType !== "N/A") {
+			console.log("Secondary Type:", this.secondaryType); // Verifique o valor de secondaryType
+			const secondaryType = document.createElement("h3");
+			secondaryType.classList.add("poke-type");
+
+			// Verifica se o tipo secundário está presente nas cores
+			if (this.secondaryType in typeColors) {
+				console.log("Cor do tipo secundário:", typeColors[this.secondaryType]); // Verifique se a cor está sendo aplicada
+				// Aplica a cor do tipo ao elemento
+				secondaryType.style.color = typeColors[this.secondaryType];
+			}
+
+			secondaryType.textContent = this.secondaryType;
+			types.append(secondaryType);
+		}
 
 		// Stats aside
 
@@ -111,7 +154,7 @@ export class createPokeContainer {
 		spAtkStats.classList.add("stats");
 
 		const spAtkTitle = document.createElement("h3");
-		spAtkTitle.textContent = "spAtkesa";
+		spAtkTitle.textContent = "SP. Ataque";
 
 		const spAtkValue = document.createElement("p");
 		spAtkValue.textContent = this.spAtk;
@@ -163,7 +206,7 @@ export class createPokeContainer {
 
 		aside.append(statsContainer);
 
-		pokeImage.append(pokeId, pokeArt, pokeName, primaryType, secondaryType);
+		pokeImage.append(pokeId, pokeArt, pokeName, types);
 		pokeContainer.append(pokeImage);
 
 		divisionContainer.append(pokeContainer);

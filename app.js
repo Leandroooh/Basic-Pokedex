@@ -1,37 +1,26 @@
 import { createPokeContainer } from "./src/classes/CreateElement.js";
 import { getPokemon } from "./src/classes/getPokeData.js";
 
-const typeColors = {
-	grass: "36AC3D",
-	fire: "D38851",
-	bug: "B4C36F",
-	fairy: "EF52BB",
-	dragon: "286196",
-	ghost: "71618A",
-	ground: "BDAB4F",
-	psychic: "BA4777",
-	steel: "6E8D95",
-	dark: "0A0528",
-	electric: "F2A62A",
-};
+const amount = 900;
 
-const pikachu = new getPokemon(235);
-const dados = await pikachu.getData();
+for (let i = 1; i < amount; i++) {
+	const poke = new getPokemon(i);
+	const pokeData = await poke.getData();
 
-const container = new createPokeContainer(
-	dados.id,
-	dados.name,
-	dados.primaryType,
-	dados.secondaryType,
-	dados.sprite,
-	dados.stats.hp,
-	dados.stats.atk,
-	dados.stats.def,
-	dados.stats.spatk,
-	dados.stats.spdef,
-	dados.stats.speed,
-);
+	const container = new createPokeContainer(
+		pokeData.id,
+		pokeData.name,
+		pokeData.primaryType,
+		pokeData.secondaryType,
+		pokeData.sprite,
 
-container.createContainer();
+		pokeData.stats.hp,
+		pokeData.stats.atk,
+		pokeData.stats.def,
+		pokeData.stats.spatk,
+		pokeData.stats.spdef,
+		pokeData.stats.speed,
+	);
 
-console.log(dados);
+	container.createContainer();
+}

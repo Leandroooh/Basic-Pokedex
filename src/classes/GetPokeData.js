@@ -28,9 +28,10 @@ export class getPokemon {
 				stats: {
 					hp: pokeInfo.stats[0].base_stat,
 					atk: pokeInfo.stats[1].base_stat,
-					defense: pokeInfo.stats[2].base_stat,
+					def: pokeInfo.stats[2].base_stat,
 					spatk: pokeInfo.stats[3].base_stat,
 					spdef: pokeInfo.stats[4].base_stat,
+					speed: pokeInfo.stats[5].base_stat,
 				},
 			};
 		} catch (error) {
