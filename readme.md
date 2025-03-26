@@ -12,7 +12,7 @@ Basic Pokédex é uma aplicação simples que exibe informações sobre Pokémon
 ## Funcionalidades
 - Exibição de informações básicas de um Pokémon (nome, número, tipos e atributos).
 - Barras de status para os atributos do Pokémon.
-- Interface minimalista e responsiva.
+- Interface minimalista.
 
 ## Como Executar o Projeto
 1. Clone este repositório:
@@ -32,7 +32,6 @@ Basic Pokédex é uma aplicação simples que exibe informações sobre Pokémon
 
 ## Próximos Passos
 - Melhorar a responsividade.
-- Adicionar interação com uma API para buscar Pokémons dinamicamente.
 - Implementar um sistema de busca.
 
 ## Contribuição
