@@ -59,17 +59,17 @@ export class createPokeContainer {
 			ground: "#BDAB4F",
 			psychic: "#BA4777",
 			steel: "#6E8D95",
-			flying: "#A0C3D2", // Cor suave azulada para Flying
-			water: "#4A90E2", // Azul para Water
-			ice: "#A9D9F5", // Azul claro para Ice
-			rock: "#B4A400", // Amarelo escuro para Rock
-			fighting: "#E63946", // Vermelho intenso para Fighting
-			normal: "#F1F1F1", // Cor neutra para Normal
-			poison: "#8E44AD", // Roxo para Poison
-			bug: "#B4C36F", // Cor de verde para Bug
-			ghost: "#71618A", // Cor roxa para Ghost
-			dark: "#0A0528", // Cor escura para Dark
-			electric: "#F2A62A", // Amarelo brilhante para Electric
+			flying: "#A0C3D2",
+			water: "#4A90E2",
+			ice: "#A9D9F5",
+			rock: "#B4A400",
+			fighting: "#E63946",
+			normal: "#B6B6B6",
+			poison: "#8E44AD",
+			bug: "#B4C36F",
+			ghost: "#71618A",
+			dark: "#0A0528",
+			electric: "#F2A62A",
 		};
 
 		const types = document.createElement("div");
@@ -167,7 +167,7 @@ export class createPokeContainer {
 		spDefStats.classList.add("stats");
 
 		const spDefTitle = document.createElement("h3");
-		spDefTitle.textContent = "spDefesa";
+		spDefTitle.textContent = "SP. Defesa";
 
 		const spDefValue = document.createElement("p");
 		spDefValue.textContent = this.spDef;
@@ -180,7 +180,7 @@ export class createPokeContainer {
 		speedStats.classList.add("stats");
 
 		const speedTitle = document.createElement("h3");
-		speedTitle.textContent = "speedesa";
+		speedTitle.textContent = "Speed";
 
 		const speedValue = document.createElement("p");
 		speedValue.textContent = this.speed;

@@ -1,7 +1,7 @@
 import { createPokeContainer } from "./src/classes/CreateElement.js";
 import { getPokemon } from "./src/classes/getPokeData.js";
 
-const amount = 900;
+const amount = 898;
 
 for (let i = 1; i < amount; i++) {
 	const poke = new getPokemon(i);
