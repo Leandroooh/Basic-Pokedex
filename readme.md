@@ -1,6 +1,6 @@
 # Basic Pokédex
 
-![Snom](./image.png)
+![Snom](./public/images/pokemon/mewtwo.svg.png)
 
 ## Sobre o Projeto
 
