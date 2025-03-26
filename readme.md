@@ -1,7 +1,5 @@
 # Basic Pokédex
 
-![Snom](./public/images/pokemon/mewtwo.svg.png)
-
 ## Sobre o Projeto
 
 Basic Pokédex é uma aplicação simples que exibe informações sobre Pokémons, incluindo seus status base e tipos. O objetivo do projeto é praticar conceitos de manipulação de dados em JavaScript, estilização com CSS e interação com APIs `(PokeAPI)`.
